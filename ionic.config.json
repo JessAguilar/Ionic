@@ -1,0 +1,8 @@
+{
+  "name": "holiwis",
+  "app_id": "9bad07d4",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

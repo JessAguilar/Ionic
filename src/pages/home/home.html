@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><img class="primero" src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1525818062"></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="fuerza">
+      <ion-icon name="logo-foursquare"></ion-icon>  Fuerza
+    </ion-segment-button>
+    <ion-segment-button value="agilidad">
+      <ion-icon name="leaf"></ion-icon>  Agilidad
+    </ion-segment-button>
+    <ion-segment-button value="inteligencia">
+      <ion-icon name="ios-bulb-outline"></ion-icon>  Inteligencia
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'fuerza'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://d1u5p3l4wpay3k.cloudfront.net/dota2_gamepedia/2/23/Axe_icon.png">
+      </ion-thumbnail>
+      <h2>Axe</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://d1u5p3l4wpay3k.cloudfront.net/dota2_gamepedia/8/8d/Io_icon.png">
+      </ion-thumbnail>
+      <h2>Io</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://d1u5p3l4wpay3k.cloudfront.net/dota2_gamepedia/4/4d/Bristleback_icon.png">
+      </ion-thumbnail>
+      <h2>Bristleback</h2>
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'agilidad'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://d1u5p3l4wpay3k.cloudfront.net/dota2_gamepedia/7/7d/Luna_icon.png">
+      </ion-thumbnail>
+      <h2>Luna</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://d1u5p3l4wpay3k.cloudfront.net/dota2_gamepedia/8/80/Drow_Ranger_icon.png">
+      </ion-thumbnail>
+      <h2>Drown Ranger</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://d1u5p3l4wpay3k.cloudfront.net/dota2_gamepedia/9/9c/Templar_Assassin_icon.png">
+      </ion-thumbnail>
+      <h2>Templar Assassin</h2>
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'inteligencia'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://d1u5p3l4wpay3k.cloudfront.net/dota2_gamepedia/2/27/Crystal_Maiden_icon.png">
+      </ion-thumbnail>
+      <h2>Crystal Maiden</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://d1u5p3l4wpay3k.cloudfront.net/dota2_gamepedia/3/35/Lina_icon.png">
+      </ion-thumbnail>
+      <h2>Lina</h2>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://d1u5p3l4wpay3k.cloudfront.net/dota2_gamepedia/6/67/Ancient_Apparition_icon.png">
+      </ion-thumbnail>
+      <h2>Ancient Apparition</h2>
+    </ion-item>
+  </ion-list>
+</div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title><div align="center">IceFrog</div></ion-title>
+  </ion-toolbar>
+</ion-footer>
